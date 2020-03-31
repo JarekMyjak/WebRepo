@@ -1,3 +1,7 @@
+body{
+    background-image: url(assets/masthead@2x.jpg);
+    background-size: 100vw;
+}
 main{
     width: 1200px;
     margin: 0 auto;
@@ -6,7 +10,17 @@ main{
 header{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px white solid;
 }
 img , nav {
     display: block;
+}
+.columns{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    display: block;
+    width: 300px;
+    margin-left: 30px;
 }
