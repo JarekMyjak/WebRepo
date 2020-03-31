@@ -1,16 +1,30 @@
 :root{
     font-family: 'Roboto', sans-serif;
+    border: none;
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
 }
 
-body{
+.bgfoto{
+    margin: 0px 0px;
+
     background-image: url(assets/masthead@2x.jpg);
     background-size: 100vw;
 }
 main{
     width: 1200px;
+    height: 80vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+}
+footer{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 header{
@@ -18,21 +32,31 @@ header{
     justify-content: space-between;
     border-bottom: 1px white solid;
 }
+img{
+    width: auto;
+    margin: 10px 0px
+}
 img , nav {
     display: block;
 }
-nav a{
+nav .but{
     display: inline-block;
+    margin: 40px 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+nav a{
+    
     /* border: 10px white solid; */
-    margin: 50px 10px;
+    
     color: black;
     text-decoration: none;
 }
-nav a:hover{
+nav .but:hover{
     color: white;
     background-color: burlywood;
 }
-nav a#home{
+nav .but#home{
     color: white;
     background-color: orange;
 }
@@ -53,4 +77,9 @@ article{
 }
 article h1{
     font-size: 100px;
+    margin-bottom: 0px;
+
+}
+article span {
+    color: grey;
 }
