@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="menuBar"><a href="#" onclick="let el = document.querySelector('#menuItems');  el.style.display = el.style.display === 'none' ? 'block' : 'none'">Menu</a></div>
+        <ul id="menuItems">
+            <li><button id="composeButton">Compose</button></li>
+            <li>
+                <ul id="sectionsList">
+                    <li class="navi"><a href="#">Inbox <span class="num">(2)</a></span></li>
+                    <li class="navi"><a href="#">Important <span class="num"></span></a></li>
+                    <li class="navi"><a href="#">Sent <span class="num"></span></a></li>
+                    <li class="navi"><a href="#">Drafts <span class="num"></span></a></li>
+                    <li class="navi"><a href="#">Trash <span class="num"></span></a></li>
+                </ul>
+            </li>
+            <li>
+                <h4 id="labels">LABELS</h3>
+                <ul id="labelList">
+                    <li id="labelPrivate"><div class="colorBox"></div>Private</li>
+                    <li id="labelJob"><div class="colorBox"></div>Job</li>
+                    <li id="labelFlights"><div class="colorBox"></div>Flights</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="mailList">
+        <div class="mailItem">
+            <img class="senderImage" src="avatary/p5.png" alt="avatar">
+            <div class="mailItemText">
+                <h4 class="senderName">May June</h4>
+                <h4 class="mailTitle">New York New Yoork</h4>
+                <p class="mailSnipet">Hey, confirm our meeting today, Fifth Avenue. Hmm?</p>
+            </div>
+        </div>
+        <div class="mailItem">
+            <img class="senderImage" src="avatary/p4.png" alt="avatar">
+            <div class="mailItemText">
+                <h4 class="senderName">Johny Cash</h4>
+                <h4 class="mailTitle">Re: Pull Requests</h4>
+                <p class="mailSnipet">Really, better give that money back. Papa Joe is waiting.</p>
+            </div>
+        </div>
+        <div class="mailItem">
+            <img class="senderImage" src="avatary/p3.png" alt="avatar">
+            <div class="mailItemText">
+                <h4 class="senderName">Your Wordpress</h4>
+                <h4 class="mailTitle">Last Warning</h4>
+                <p class="mailSnipet">Your previous drupal site had 12 errors, 15 warnings. It sucks!</p>
+            </div>
+        </div>
+        <div class="mailItem">
+            <img class="senderImage" src="avatary/p2.png" alt="avatar">
+            <div class="mailItemText">
+                <h4 class="senderName">June Ray</h4>
+                <h4 class="mailTitle">Re: That night</h4>
+                <p class="mailSnipet">Uważaj w tym sezonie na Japończyka</p>
+            </div>
+        </div>
+        <div class="mailItem">
+            <img class="senderImage" src="avatary/p1.png" alt="avatar">
+            <div class="mailItemText">
+                <h4 class="senderName">Andrew Clearwater</h4>
+                <h4 class="mailTitle">What about Materials?</h4>
+                <p class="mailSnipet">Szykujemy z Creadencem Revival, chcesz wpaść?</p>
+            </div>
+        </div>
+        <div class="mailItem">
+            <img class="senderImage" src="avatary/yfinance.png" alt="avatar">
+            <div class="mailItemText">
+                <h4 class="senderName">Chris Duck</h4>
+                <h4 class="mailTitle">Nie daj się oszukać!</h4>
+                <p class="mailSnipet">Przesyłamy ci tego maila żeby sprzedać ci coś czego nie potrzebujesz. Prawde mówiąc nawet tego nie chcesz</p>
+            </div>
+        </div>
+    </section>
+    <article id="mailContainer">
+        <div id="mailHeader">
+            <div id="mailHeaderText">
+                <h2 id="mailTitle">Ale Wieje</h2>
+                <p id="mailInfo">From <span class="mailInfoSender">Eno Uqa</span> at <span class="mailInfoDate">13:16pm May 8, 2015</span></p>
+            </div>
+            <div id="mailHeaderButtons">
+                <ul>
+                    <li><button class="mailHeaderButton">Reply</button></li>
+                    <li><button class="mailHeaderButton">Forward</button></li>
+                    <li><button class="mailHeaderButton">Move to</button></li>
+                </ul>
+            </div>
+        </div>
+        <div id="mailContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada urna in venenatis sodales. Maecenas ornare iaculis urna, sit amet scelerisque tortor aliquet sed. In at ipsum vitae massa viverra porta semper nec leo. Aenean lacus felis, laoreet aliquet mauris ut, blandit dictum mauris. In efficitur, mi id interdum pellentesque, elit diam vestibulum eros, rhoncus euismod mauris enim nec odio. Nulla id tortor sit amet ante fringilla posuere quis a mi. Mauris tempus, quam quis posuere placerat, libero ipsum tempus nibh, eu bibendum est erat ac nisl. Pellentesque eget urna urna. Aliquam varius mi ac sem vehicula ullamcorper. Curabitur fermentum sit amet magna sit amet faucibus. Vivamus nec purus in erat venenatis vestibulum. Nunc eu augue mollis, commodo urna id, accumsan mauris.</p>
+            <br><p>Donec sed vehicula orci. Mauris dictum vulputate odio, nec auctor urna volutpat ac. Mauris elementum a diam ac pharetra. Aliquam erat volutpat. Nulla cursus dolor ut lorem malesuada, sed auctor lorem lacinia. Sed a nunc commodo, euismod diam quis, suscipit felis. Vivamus quis ligula sit amet ante molestie convallis. In eget suscipit neque. Quisque in tempor urna. Suspendisse posuere condimentum lacinia. Nullam nulla orci, sodales quis laoreet id, ullamcorper eu metus. Etiam lobortis eros hendrerit felis dictum pharetra. Aenean sed turpis id lacus dapibus laoreet a ac risus. Fusce non ipsum non urna tincidunt consequat non non velit. Aenean semper tincidunt mauris, ut porttitor est ultrices at.</p>
+            <br><p>Aliquam feugiat, elit volutpat tempus sodales, nulla lacus commodo odio, et pharetra metus nunc sed lorem. Morbi a venenatis dolor. Etiam rhoncus, ipsum eget pulvinar accumsan, sem mauris dignissim elit, vel lacinia tortor dui et nulla. Maecenas efficitur felis at lectus maximus dapibus. Aliquam erat volutpat. Vivamus porta, mi ut dignissim congue, nisi sapien egestas nibh, non volutpat purus risus nec nulla. Suspendisse feugiat augue id mi finibus, eget pellentesque nunc auctor. Vestibulum eleifend lectus nisl, id pharetra nunc tempus ac.</p>
+            <br><p>Nam malesuada tempus velit id mollis. Fusce fringilla dignissim placerat. Integer mollis dui at nisi aliquam euismod. Proin quis felis rutrum orci volutpat semper. Vestibulum in hendrerit metus. Phasellus rhoncus eu orci eu aliquam. Praesent vel sapien vitae enim volutpat eleifend ut sed dui. In viverra sapien in mi tincidunt, id mattis augue eleifend. Quisque urna lorem, tempus ut erat nec, bibendum interdum ante. Vivamus consequat turpis elit, eu gravida risus sodales eget. Aliquam nunc ipsum, tincidunt non varius sit amet, imperdiet eu odio. Etiam nec iaculis sem, in aliquam nunc. Morbi feugiat nisl eget tristique blandit. In hac habitasse platea dictumst. Mauris vel ante non massa vehicula ullamcorper.</p>
+            <br><p>Nullam maximus, lacus vitae blandit pretium, libero arcu hendrerit ante, ut convallis leo erat vitae nisi. Nulla ipsum massa, pharetra at volutpat nec, scelerisque vel justo. Cras ultricies, nisi ut bibendum venenatis, ex tellus malesuada libero, eu mollis dolor quam at ante. Ut quis est bibendum, euismod elit at, pharetra velit. Nullam ultrices et dui congue elementum. Pellentesque viverra non nisi sit amet euismod. Sed a luctus augue, sed eleifend est. Praesent eu nisi feugiat, consequat velit at, tempor massa.</p>
+        </div>
+    </article>
+</body>
+</html>
